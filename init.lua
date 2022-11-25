@@ -1,3 +1,4 @@
+print("hello from init.lua")
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -19,3 +20,4 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+print("goodbye from init.lua")

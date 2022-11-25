@@ -56,6 +56,26 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
 	use {"folke/which-key.nvim"}
+use({
+  "gbprod/substitute.nvim",
+  config = function()
+    require("substitute").setup({
+        vim.keymap.set("n", "s", "<cmd>lua require('substitute').operator()<cr>", { noremap = true }),
+        vim.keymap.set("n", "ss", "<cmd>lua require('substitute').line()<cr>", { noremap = true }),
+        vim.keymap.set("n", "S", "<cmd>lua require('substitute').eol()<cr>", { noremap = true }),
+        vim.keymap.set("x", "s", "<cmd>lua require('substitute').visual()<cr>", { noremap = true }),
+
+        --github.com/gbprod/substitute.nvim
+        vim.keymap.set("n", "sx", "<cmd>lua require('substitute.exchange').operator()<cr>", { noremap = true }),
+        vim.keymap.set("n", "sxx", "<cmd>lua require('substitute.exchange').line()<cr>", { noremap = true }),
+        vim.keymap.set("x", "X", "<cmd>lua require('substitute.exchange').visual()<cr>", { noremap = true }),
+        vim.keymap.set("n", "sxc", "<cmd>lua require('substitute.exchange').cancel()<cr>", { noremap = true })
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    })
+  end
+})
 
 	-- Colorschemes
   use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
