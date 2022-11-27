@@ -1,8 +1,9 @@
 local servers = {
-	"sumneko_lua",
+  --enable or disable lsp servers here jsonins & sumneko_lua will be loaded from "settings" directory 
+  "sumneko_lua",
 	-- "cssls",
-	-- "html",
-	-- "tsserver",
+	"html",
+	"tsserver",
 	"pyright",
 	-- "bashls",
 	"jsonls",
