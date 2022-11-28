@@ -60,6 +60,7 @@ return packer.startup(function(use)
 	use({ "hashivim/vim-terraform" })
 
 	--Subsititution plugin & keymaps (s, ss, S)
+  --github.com/gbprod/substitute.nvim
 	use({
 		"gbprod/substitute.nvim",
 		config = function()
