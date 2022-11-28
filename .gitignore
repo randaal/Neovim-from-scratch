@@ -39,7 +39,7 @@ luac.out
 *.x86_64
 *.hex
 
-#local gitconfig
+#local .gitconfig
 *.gitconfig
 
 plugin/packer_compiled.lua
