@@ -57,6 +57,7 @@ return packer.startup(function(use)
 	use({ "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" })
 	use({ "folke/which-key.nvim" })
 	use({ "ThePrimeagen/harpoon" })
+  use({"darkoperator/vscode-language-aggressor"})
 
 	--Subsititution plugin & keymaps (s, ss, S)
   --github.com/gbprod/substitute.nvim
