@@ -11,6 +11,9 @@ git clone https://github.com/randaal/Neovim-from-scratch.git ~/.config/nvim
 
 On Windows
 git clone https://github.com/randaal/Neovim-from-scratch.git ~/AppData/Local/nvim
+
+On Mac
+git clone https://github.com/randaal/Neovim-from-scratch.git ~/.config/nvim 
 ```
 
 Run `nvim` and wait for the plugins to be installed. (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
@@ -23,14 +26,4 @@ Open `nvim` and enter the following:
 
 ```
 :checkhealth
-```
-### Upgrade to latest release
-
-Assuming you [built from source](https://github.com/neovim/neovim/wiki/Building-Neovim#quick-start), `cd` into the folder where you cloned `neovim` and run the following commands. 
-```
-git pull
-make distclean && make CMAKE_BUILD_TYPE=Release
-git checkout v0.8.0
-sudo make install
-nvim -v
 ```
