@@ -6,5 +6,5 @@ end
 require("user.lsp.mason")
 require("user.lsp.handlers").setup()
 require("user.lsp.null-ls")
-require'lspconfig'.solargraph.setup{}
-
+require("rust-tools").setup()
+--require("user.lsp.rust_analyzer").setup()
