@@ -43,3 +43,12 @@ vim.cmd([[autocmd BufRead,BufNewFile *.tfstate,*.tfstate.backup set filetype=jso
 --   autocmd!
 --   autocmd BufWritePre * lua vim.lsp.buf.formatting()
 -- augroup end
+
+--" Syntax highlighting for .nessus files
+--au BufNewFile, BufRead *.nessus set filetype=xml
+vim.cmd([[autocmd BufNewFile, BufRead *.nessus set filetype=xml]])
+
+--" Syntax highlighting for aggressor files
+--vim.cmd "autocmd BufNewFile,BufRead *.cna  set syntax=ruby"
+vim.cmd([[autocmd BufNewFile,BufRead *.cna  set filetype=cna]])
+
