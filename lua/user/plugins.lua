@@ -58,7 +58,6 @@ return packer.startup(function(use)
 	use({ "folke/which-key.nvim" })
 	use({ "ThePrimeagen/harpoon" }) --maybe???
 	use({ "darkoperator/vscode-language-aggressor" }) --aggressor script analyzer
-	use({ "simrat39/rust-tools.nvim" }) --Rust-tools
 	use({ "puremourning/vimspector" }) --vimspector
 
 use {
