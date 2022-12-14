@@ -38,8 +38,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Navigate up and down
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+keymap ("n", "n", "nzzzv", opts)
+keymap ("n", "N", "Nzzzv", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
